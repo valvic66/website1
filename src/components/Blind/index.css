@@ -1,0 +1,24 @@
+.blind {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.8);
+  color: black;
+  display: none;
+}
+.blind.isBlindOn {
+    display: block;
+}
+.blind_firmname {
+    /* color: white;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    transform: scale(1, 1.1);
+    margin-left: 150px;
+    margin-top: 80px; */
+}

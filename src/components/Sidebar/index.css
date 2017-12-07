@@ -1,0 +1,67 @@
+.company_sidebar {
+    height: calc(100vh);
+    position: fixed;
+    width: 300px;
+    visibility: hidden;
+    top: 0px;
+    right: -400px;
+    background-color: black;
+    opacity: 1;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+  }
+  .company_sidebar_logo:hover img {
+    transition: .3s;
+    transform: rotateZ(90deg);
+    width: 16px;
+    height: 16px;
+  } 
+  .company_sidebar_logo {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    display: flex;
+    
+  }
+  .company_sidebar_logo img {
+    margin-left: 10px;
+  }
+  
+  .company_sidebar.isSidemenuVisible {
+    visibility: visible;
+  }
+  .company_sidebar.isSidemenuSlideIn {
+    transition: .5s linear;
+    transform: translateX(-400px);
+  }
+  .company_sidebar.isSidemenuSlideOut {
+    transition: .5s linear;
+    transform: translateX(200%);
+  }
+  .company_sidebar_item {
+    padding: 15px 30px;
+    cursor: pointer;
+    position: relative;
+  }
+  .company_sidebar_item:hover {
+    color: lightgrey;
+  }
+  .company_sidebar_item:hover::after {
+    content: url('../../menu_arrow.svg');
+    position: absolute;
+    right: 10px;
+    top: 16px;
+
+  }
+  @media screen and (max-width: 360px) {
+    .company_sidebar {
+      width: 100%;
+    }
+  }

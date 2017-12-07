@@ -1,0 +1,19 @@
+.company_solution_image {
+  /* background-color: lightblue; */
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.company_solution_image img {
+  max-width: 65%;
+}
+
+@media screen and (min-width: 600px) {
+  .company_solution_image {
+    flex: 1;
+  }
+  .company_solution_image img {
+    max-width: 100%;
+  }
+}

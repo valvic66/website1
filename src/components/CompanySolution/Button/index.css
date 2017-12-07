@@ -1,0 +1,30 @@
+.company_solution_btn {
+    cursor: pointer;
+    font-family: "Soleil W01 Bold", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9F9F9F;
+    padding: 22px 15px;
+    background-color: #282828;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.company_solution_btn:hover .company_solution_btn_logo {
+    display: flex;
+    padding-right: 5px;
+}
+
+.company_solution_btn_logo {
+    display: none;
+}
+.company_solution_btn_name {
+    letter-spacing: 1px;
+    font-size: 15px;
+}

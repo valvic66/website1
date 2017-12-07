@@ -1,0 +1,77 @@
+.company_header {
+    /* background-color: lightgreen; */
+    color: white;
+    width: 100%;
+    height: 100px;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    animation-name: header_slide;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-delay: .3s;
+}
+@keyframes header_slide {
+    from {transform: translateY(-100px);}
+    to {transform: translateY(0);}
+  }
+
+.company_name {
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transform: scale(1, 1.2);
+}
+
+.company_name:hover {
+    color: lightgray;
+}
+.company_menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55px;
+    align-items: center;
+}
+.company_menu:hover .company_menu_logo {
+    transition: .3s;
+    transform: rotateZ(90deg);
+}
+.company_menu_name {
+    font-family: "Soleil W01 Bold", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+/* .company_menu_logo {} */
+
+.company_menu_logo.isDefault {
+    content: url('../../menu_line.svg');
+}
+/* .company_menu_logo.isChanged {
+    content: url('../../menu_close.svg');
+} */
+
+@media screen and (min-width: 600px) {
+    .company_name {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    .company_menu_name {
+        font-size: 12px;
+    }
+    .company_menu {
+        width: 65px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .company_name {
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+}

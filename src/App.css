@@ -1,0 +1,30 @@
+html {
+  background: url("http://ppim.dk/sites/default/files/styles/background_image/public/img_4144_02.jpg?itok=w-0_buxs") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  animation-name: background_transform;
+  animation-duration: .3s;
+}
+@keyframes background_transform {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+}
+
+.page_index {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+} */
+
