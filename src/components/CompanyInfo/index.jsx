@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './index.css'
+
 import Button from '../CompanySolution/Button'
+
 
 export default class CompanyInfo extends Component {
   render () {

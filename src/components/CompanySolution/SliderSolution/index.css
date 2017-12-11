@@ -1,48 +1,44 @@
 .company_solution_slidersolutions {
-  /* background-color: lightpink; */
-  order: 1;
+  margin-bottom: 30px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 30px;
+  order: 1;
 }
+
 .company_solution_slidersolutions_title {
   font-family: "Financier", serif;
   font-size: 40px;
-  margin-bottom: 26px;
   letter-spacing: .5px;
+
+  margin-bottom: 26px;
 }
 
 .company_solution_slidersolutions_item {
-  display: flex;
+  font-family: "Soleil W01 Bold", sans-serif;
   font-size: 14px;
   letter-spacing: 1.5px;
   color: lightgray;
-  font-family: "Soleil W01 Bold", sans-serif;
+  
   padding: 2px 0;
+
+  display: flex;
 }
 
 .company_solution_slidersolutions_item_logo.islogo {
   display: flex;
-
 }
 
 .company_solution_slidersolutions_item:hover {
-  /* color: lightblue; */
   cursor: pointer;
 }
 
-/* .company_solution_slidersolutions_item:hover .company_solution_slidersolutions_item_logo {
-  display: flex;
-} */
-
 .company_solution_slidersolutions_item_logo {
   display: none;
-  padding-right: 5px;
   font-size: 15px;
-}
-.company_solution_slidersolutions_items_item_text {
 
+  padding-right: 5px;
 }
 
 @media screen and (min-width: 600px) {

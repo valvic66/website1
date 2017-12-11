@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
 import CompanySolution from './components/CompanySolution'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
@@ -30,7 +30,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('Is menu clicked: ', this.state.isMenuClicked)
     let companySolution = [
       {id: 0, sliderimage: 'http://ppim.dk/sites/default/files/styles/columns_6_square/public/img_4054_0.jpg?itok=oGttWd0P', solutionname: 'Chief Investment Officer', solutiondescription: 'Gain a significant strategic advantage.'},
       {id: 1, sliderimage: 'http://ppim.dk/sites/default/files/styles/columns_6_square/public/img_4196.jpg?itok=VnsBQlPp', solutionname: 'Single Strategy Solutions', solutiondescription: 'Get a smarter single strategy solution.'},
@@ -71,11 +70,8 @@ class App extends Component {
         <Footer
           footerLinks={footerLinks}
         />
-
-      
-        
       </div>
-    );
+    )
   }
 }
 

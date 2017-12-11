@@ -15,7 +15,9 @@ class SliderSolutionItem extends React.Component {
     this.props.onMouseEnter(event)
   }
 
+
   render() {
+
     return (
       <div
         className='company_solution_slidersolutions_item'
@@ -36,11 +38,12 @@ export default class SliderSolution extends React.Component {
   handleSelect = (event, solution) => {
     this.props.onSelect(event, solution)
   }
+
   render() {
     let style = {
       textAlign: 'left',
     }
-    // console.log(this.props.currentsolution)
+
     return (
       <div id='div2' className="company_solution_slidersolutions">
         <div style={style}>
@@ -53,8 +56,8 @@ export default class SliderSolution extends React.Component {
                 currentsolution={this.props.currentsolution && this.props.currentsolution === solution.solutionname}
               />  
             ))}
-          </div>  
-    </div>
+        </div>
+      </div>
     )
   }
 }

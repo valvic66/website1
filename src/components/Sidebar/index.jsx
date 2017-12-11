@@ -1,6 +1,5 @@
 import React from 'react'
 import './index.css'
-import onClickOutside from "react-onclickoutside";
 
 class SidebarItem extends React.Component {
     getCSSClasses = () => {
@@ -15,7 +14,6 @@ class SidebarItem extends React.Component {
       return (
         <div
           className={this.getCSSClasses()}
-        //   onMouseEnter={(event) => this.handleMouseEnter(event)}
         >
             {this.props.sidebaritem}
         </div>
@@ -24,11 +22,6 @@ class SidebarItem extends React.Component {
   }
 
 class Sidebar extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-
     getCompanySidemenuCSS = () => {
         const classes = ['company_sidebar']
         if (this.props.isMenuClicked) {
@@ -64,4 +57,4 @@ class Sidebar extends React.Component {
     }
 }
 
-export default onClickOutside(Sidebar)
+export default Sidebar

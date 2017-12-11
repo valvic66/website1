@@ -4,11 +4,10 @@
   "private": true,
   "homepage": "https://valvic66.github.io/website1",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-onclickoutside": "^6.7.0",
-    "react-scripts": "1.0.17",
-    "gh-pages": "^1.1.0"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css'
 
-import Header from '../Header'
 
 export default class Blind extends React.Component {
     getBlindCSSClasses = () => {

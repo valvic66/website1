@@ -3,9 +3,10 @@
 }
 
 .company_wrapper {
+  color: white;
+  
   display: flex;
   flex-direction: column;
-  color: white;
 }
 
 @media screen and (min-width: 600px) {

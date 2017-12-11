@@ -8,12 +8,7 @@ export default class Header extends React.Component {
       }
     
     getMenuLogoCSS = () => {
-        const classes = ['company_menu_logo isDefault']
-        // if (this.props.isMenuClicked) {
-        //   classes.push ('isChanged')
-        // } else {
-        //   classes.push ('isDefault')
-        // }
+        const classes = ['company_menu_logo icon-minus']
         return classes.join(' ')
     }
 

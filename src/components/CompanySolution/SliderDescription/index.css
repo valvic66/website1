@@ -2,37 +2,37 @@
   position: relative;
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
+  
   margin-top: -110px;
   margin-left: 80px;
+
+  display: flex;
+  flex-direction: column;
 }
+
 .company_solution_sliderdescription_solution {
   font-family: "Soleil W01 Bold", sans-serif;
   font-size: 12px;
   color: lightgray;
+  letter-spacing: 1px;
+
   padding-top: 40px; 
   padding-left: 20px;
-  letter-spacing: 1px;
 }
+
 .company_solution_sliderdescription_advice {
   font-family: "Financier", serif;
   font-size: 2rem;
+
   padding-top: 20px; 
   padding-left: 20px;
 }
+
 .company_solution_sliderdescription_btn {
   width: 130px;
   margin-top: 45px;
   margin-left: 20px;
   margin-bottom: 15px;
-}
-.company_solution_sliderdescription_btn_logo {
-
-}
-.company_solution_sliderdescription_btn_readmore {
-
 }
 
 @media screen and (min-width: 600px) {
@@ -54,53 +54,10 @@
   }
 }
 
-/* @media screen and (max-width: 360px) {
-  .company_solution_sliderdescription {
-    margin-top: -60px;
-    margin-left: 50px;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 480px) {
-  .company_solution_sliderdescription {
-    margin-top: -160px;
-    margin-left: 70px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 720px) {
-  .company_solution_sliderdescription {
-    margin-top: -80px;
-    margin-left: 150px;
-  }
-}
-@media screen and (min-width: 720px) and (max-width: 1024px) {
-  .company_solution_sliderdescription {
-    margin-top: -100px;
-    margin-left: 150px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .company_solution_sliderdescription {
-    margin-top: -250px;
-    margin-left: 300px;
-  }
-}
-@media screen and (min-width: 1366px) and (max-width: 1600px) {
-  .company_solution_sliderdescription {
-    margin-top: -290px;
-    margin-left: 450px;
-  }
-}
-@media screen and (min-width: 1600px) and (max-width: 1920px) {
-  .company_solution_sliderdescription {
-    margin-top: -320px;
-    margin-left: 450px;
-  }
-} */
-
 .company_solution_slidingrect {
-  height: 5px;
   background-color: white;
+  
+  height: 5px;
   padding: 0;
   margin: 0;
 }

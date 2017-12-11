@@ -2,12 +2,13 @@
     cursor: pointer;
     font-family: "Soleil W01 Bold", sans-serif;
     color: #9F9F9F;
-    padding: 22px 15px;
     background-color: #282828;
     color: #fff;
     border: 0;
     text-align: center;
+
     margin-bottom: 10px;
+    padding: 22px 15px;
     width: 100%;
 
     display: flex;
@@ -15,20 +16,25 @@
     justify-content: center;
     align-items: center;
 }
+
 .company_solution_btn:hover .company_solution_btn_logo {
-    display: flex;
     padding-right: 5px;
+
+    display: flex;
 }
 
 .company_solution_btn_logo {
     display: none;
     font-size: 17px;
 }
+
 .company_solution_btn_name {
     letter-spacing: 1px;
     font-size: 15px;
 }
+
 .company_solution_btn_logo.isMouseEnter {
-    display: flex;
     padding-right: 5px;
+    
+    display: flex;
 }

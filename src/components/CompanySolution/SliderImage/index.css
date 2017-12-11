@@ -1,8 +1,7 @@
 .company_solution_image {
-  /* background-color: lightblue; */
-  order: 2;
   display: flex;
   flex-direction: column;
+  order: 2;
 }
 
 .company_solution_image img:hover {
@@ -13,11 +12,10 @@
 }
 
 .company_solution_image img {
-  max-width: 65%;
   cursor: pointer;
 
+  max-width: 65%;
 }
-
 
 @media screen and (min-width: 600px) {
   .company_solution_image {

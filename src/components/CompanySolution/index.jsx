@@ -49,6 +49,7 @@ export default class CompanySolution extends React.Component {
     console.log('Timer started')
     this.timer = setInterval(this.getFilteredData, 3000)
   }
+
   stopTimer = () => {
     const { data } = this.props
     console.log('Timer stopped')
@@ -62,8 +63,6 @@ export default class CompanySolution extends React.Component {
 
   handleImageMouseEnter = (event) => {
     const { data } = this.props
-
-    console.log('Timer stopped')
     
     clearInterval(this.timer)
 
@@ -76,7 +75,6 @@ export default class CompanySolution extends React.Component {
   }
 
   handleImageMouseLeave = (event) => {
-    console.log('Timer started')
     this.timer = setInterval(this.getFilteredData, 3000)
     this.setState ({
       isImageHovered: false
@@ -84,33 +82,35 @@ export default class CompanySolution extends React.Component {
   }
   
   handleSelect = (event, solution) => {
-    // console.log(event.type, solution)
     this.setState ({
       sliderImage: solution.sliderimage,
       solutionDescription: solution.solutiondescription,
       solutionName: solution.solutionname
     })
   }
-  render () {
 
+
+  render () {
+    const { sliderImage, solutionName, solutionDescription, isImageHovered } = this.state
+    
     return (
       <div className="company_solution">
         <div className="company_wrapper">
             <SliderImage
-              sliderimage={this.state.sliderImage}
+              sliderimage={sliderImage}
               onMouseEnter={(event) => this.handleImageMouseEnter(event)}
               onMouseLeave={(event) => this.handleImageMouseLeave(event)}
             />
             <SliderSolution
               data={this.props.data} 
               onSelect={(event, solution) => this.handleSelect(event, solution)}
-              currentsolution={this.state.solutionName}
+              currentsolution={solutionName}
             />
         </div>
         <SliderDescription
-          solutiondescription={this.state.solutionDescription}
-          solutionname={this.state.solutionName}
-          isImageHovered={this.state.isImageHovered}
+          solutiondescription={solutionDescription}
+          solutionname={solutionName}
+          isImageHovered={isImageHovered}
         />
       </div> 
     )
