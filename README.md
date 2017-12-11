@@ -1,3 +1,3 @@
 # website1
-Website React+Flex
+Website React
 https://valvic66.github.io/website1
