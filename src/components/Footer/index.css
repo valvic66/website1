@@ -4,7 +4,6 @@
   margin-bottom: 50px;
   
   color: white;
-  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -18,15 +17,11 @@
   letter-spacing: 1px;
 
 }
-.footer_companyinfo {
 
-}
 .footer_companyname {
   font-size: 18px;
   letter-spacing: 1.4px;
-}
-.footer_companytype {
-
+  cursor: pointer;
 }
 
 .footer_rightside {
