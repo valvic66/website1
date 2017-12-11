@@ -5,9 +5,19 @@
   flex-direction: column;
 }
 
+.company_solution_image img:hover {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+}
+
 .company_solution_image img {
   max-width: 65%;
+  cursor: pointer;
+
 }
+
 
 @media screen and (min-width: 600px) {
   .company_solution_image {

@@ -23,7 +23,7 @@ class SliderSolutionItem extends React.Component {
       >
         {/* company_solution_slidersolutions_item_logo */}
         <div className={this.getCSSClasses()}>
-          <img src='menu_arrowr.svg' />
+          <div className='icon-arrow-right'></div>
         </div>
         <div className="company_solution_slidersolutions_item_text">{this.props.solutionname}</div>
       </div>

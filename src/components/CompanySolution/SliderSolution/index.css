@@ -15,12 +15,11 @@
 
 .company_solution_slidersolutions_item {
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   color: lightgray;
-  line-height: 26px;
   font-family: "Soleil W01 Bold", sans-serif;
-  /* letter-spacing: 1px; */
+  padding: 2px 0;
 }
 
 .company_solution_slidersolutions_item_logo.islogo {
@@ -39,7 +38,8 @@
 
 .company_solution_slidersolutions_item_logo {
   display: none;
-  padding-right: 8px;
+  padding-right: 5px;
+  font-size: 15px;
 }
 .company_solution_slidersolutions_items_item_text {
 

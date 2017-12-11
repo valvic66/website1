@@ -13,14 +13,15 @@ export default class CompanySolution extends React.Component {
       sliderImage: data[0].sliderimage,
       solutionDescription: data[0].solutiondescription,
       solutionName: data[0].solutionname,
-      selectedValue: null
+      selectedValue: null,
+      isImageHovered: false
     }
     this.timer = null
   }
 
   componentWillMount () {
     console.log('Timer started')
-    this.timer = setInterval(this.getFilteredData, 4000)
+    this.timer = setInterval(this.getFilteredData, 3000)
   }
 
   getFilteredData = () => {
@@ -46,7 +47,7 @@ export default class CompanySolution extends React.Component {
 
   startTimer = () => {
     console.log('Timer started')
-    this.timer = setInterval(this.getFilteredData, 4000)
+    this.timer = setInterval(this.getFilteredData, 3000)
   }
   stopTimer = () => {
     const { data } = this.props
@@ -61,17 +62,25 @@ export default class CompanySolution extends React.Component {
 
   handleImageMouseEnter = (event) => {
     const { data } = this.props
+
     console.log('Timer stopped')
+    
     clearInterval(this.timer)
+
     this.setState ({
       currentValue: data[this.state.currentValue].id,
       sliderImage: data[this.state.currentValue].sliderimage,
-      solutionDescription: data[this.state.currentValue].solutiondescription
+      solutionDescription: data[this.state.currentValue].solutiondescription,
+      isImageHovered: true
     })
   }
+
   handleImageMouseLeave = (event) => {
     console.log('Timer started')
-    this.timer = setInterval(this.getFilteredData, 4000)
+    this.timer = setInterval(this.getFilteredData, 3000)
+    this.setState ({
+      isImageHovered: false
+    })
   }
   
   handleSelect = (event, solution) => {
@@ -83,8 +92,7 @@ export default class CompanySolution extends React.Component {
     })
   }
   render () {
-    // console.log(this.state.currentValue, this.state.sliderImage, this.state.solutionDescription)
-    // console.log(this.state.selectedValue)
+
     return (
       <div className="company_solution">
         <div className="company_wrapper">
@@ -101,7 +109,8 @@ export default class CompanySolution extends React.Component {
         </div>
         <SliderDescription
           solutiondescription={this.state.solutionDescription}
-          solutionname={this.state.solutionName}  
+          solutionname={this.state.solutionName}
+          isImageHovered={this.state.isImageHovered}
         />
       </div> 
     )

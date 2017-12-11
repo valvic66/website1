@@ -12,10 +12,10 @@ export default class SliderImage extends React.Component {
     return (
       <div
         id='div1'
-        className="company_solution_image"
+        className='company_solution_image'
         >
         <img
-          src={this.props.sliderimage} 
+          src={this.props.sliderimage}
           onMouseEnter={(event) => this.handleMouseEnter(event)}
           onMouseLeave={(event) => this.handleMouseLeave(event)}
         />

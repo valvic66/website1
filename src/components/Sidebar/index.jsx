@@ -50,8 +50,8 @@ class Sidebar extends React.Component {
                     className="company_sidebar_logo"
                     onClick={(event) => this.handleClick(event)}
                 >
-                    <div>Close</div>
-                    <img src='menu_close.svg' width='16' height='16' />   
+                    <div className='company_sidebar_logo_title'>Close</div>
+                    <div className='icon-close' />
                 </div>
                 {this.props.sidebaritems.map((menuitem, key) => (
                     <SidebarItem

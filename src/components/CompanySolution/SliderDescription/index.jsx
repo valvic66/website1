@@ -12,6 +12,7 @@ const SliderDescription = (props) => {
       <div className='company_solution_sliderdescription_btn'>
         <Button
           buttonname='Read more'
+          isImageHovered={props.isImageHovered}
         />
       </div>
     </div>

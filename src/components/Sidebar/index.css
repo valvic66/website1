@@ -1,15 +1,14 @@
 .company_sidebar {
     height: calc(100vh);
     position: fixed;
-    width: 300px;
     visibility: hidden;
     top: 0px;
     right: -400px;
     background-color: black;
     opacity: 1;
     color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,20 +18,36 @@
   .company_sidebar_logo:hover img {
     transition: .3s;
     transform: rotateZ(90deg);
-    width: 16px;
-    height: 16px;
   } 
   .company_sidebar_logo {
+    /* background-color: lightblue; */
     cursor: pointer;
     position: absolute;
-    top: 50px;
-    right: 40px;
+    top: 46px;
+    right: 30px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     
   }
-  .company_sidebar_logo img {
-    margin-left: 10px;
+  .company_sidebar_logo_title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-family: "Soleil W01 Bold", sans-serif;
   }
+  .icon-close {
+    font-size: 24px;
+    margin-left: 6px;
+  }
+
+
+
+  .company_sidebar_logo:hover .icon-close {
+    transition: .3s;
+    transform: rotateZ(90deg);
+  }
+
   
   .company_sidebar.isSidemenuVisible {
     visibility: visible;
@@ -49,6 +64,7 @@
     padding: 15px 30px;
     cursor: pointer;
     position: relative;
+    font-size: 24px;
   }
   .company_sidebar_item:hover {
     color: lightgrey;
@@ -60,7 +76,7 @@
     top: 16px;
 
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 600px) {
     .company_sidebar {
       width: 100%;
     }
